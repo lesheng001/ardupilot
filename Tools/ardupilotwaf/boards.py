@@ -70,6 +70,7 @@ class Board:
             '-ffunction-sections',
             '-fdata-sections',
             '-fsigned-char',
+            '-fsingle-precision-constant',
 
             '-Wall',
             '-Wextra',
@@ -108,6 +109,7 @@ class Board:
             '-ffunction-sections',
             '-fno-exceptions',
             '-fsigned-char',
+            '-fsingle-precision-constant',
 
             '-Wall',
             '-Wextra',
@@ -443,7 +445,6 @@ class px4(Board):
         env.CXXFLAGS += [
             '-Wlogical-op',
             '-Wframe-larger-than=1300',
-            '-fsingle-precision-constant',
             '-Wno-error=double-promotion',
             '-Wno-error=missing-declarations',
             '-Wno-error=float-equal',
